@@ -1,0 +1,376 @@
+/* Projeto: Luciana Studart
+   Desenvolvedor: Marcelo Glacial
+   Inicio: 11/09/2011
+   Ultima alteracao: 12/09/2011
+*/
+
+
+/* Reset  
+---------------------------------------------------------------------------------- */
+* {
+    margin:0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+hr {
+    display: none;
+}
+html {
+    background: url("../img/fundo-repeat.jpg") center #458098;
+}
+body {
+    background: url("../img/fundo.jpg") no-repeat top center;
+}
+
+.hide {
+    display: none;
+}
+
+/* Site
+---------------------------------------------------------------------------------- */
+#Site {
+    width:960px;
+    margin:0 auto;
+    position:relative;
+}
+
+/* Atalhos
+---------------------------------------------------------------------------------- */
+#Atalhos {
+    display:none;
+}
+
+/* Cabecalho
+---------------------------------------------------------------------------------- */
+#Cabecalho {
+    position: relative;
+    padding: 100px 30px 0 30px;
+
+    font-family: 'Raleway-Thin', Arial;
+}
+
+#Cabecalho h1 a {
+    font-size: 50px;
+    color: #478198;
+    letter-spacing: -1px;
+
+    display: block;
+    width: 345px;
+    height: 90px;
+
+}
+#Cabecalho p {
+    color:#91B4C1;
+
+    position: absolute;
+    top:145px;
+    left: 175px;
+}
+
+/* Menu
+---------------------------------------------------------------------------------- */
+#Menu {
+    position: absolute;
+    top: 120px;
+    left: 435px;
+}
+#Menu h2 {
+    display: none;
+}
+#Menu ul li {
+    list-style: none;
+    float: left;
+    padding-left: 25px;
+}
+#Menu ul li a {
+    font-family: 'Raleway-Thin', Arial;
+    font-size: 20px;
+    color: #666666;
+}
+#Menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Destaques
+---------------------------------------------------------------------------------- */
+#Destaques {
+    position: relative;
+    height: 345px;
+    background:#f1f1f1;
+    margin-bottom: 30px;
+}
+#Destaques h2 {
+    display: none;
+}
+
+#Destaques h3 a {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+
+    font-family: 'Ubuntu-Regular', "Trebuchet MS", Arial;
+    font-size: 40px;
+    color: #FFF;
+
+    width: 360px;
+    padding: 20px 30px;
+
+    background: rgba(0,0,0,0.3);
+    filter: alpha(opacity=30); /* IE? */
+}
+#Navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 450px;
+
+}
+#Navegacao ol li {
+    float: left;
+    width: 25px;
+
+}
+
+#Navegacao ol li a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    background: url("../img/seletor-inativo.png") top left;
+}
+#Navegacao ol li a.ativo {
+    background: url("../img/seletor-ativo.png") top left;
+}
+
+/* Servicos
+---------------------------------------------------------------------------------- */
+#Servicos {
+    width: 400px;
+    float: left;
+
+    padding: 30px;
+}
+#Servicos .executive {
+    background: url("../img/icone-executive.jpg") no-repeat left top;
+}
+#Servicos .life {
+    background: url("../img/icone-life.jpg") no-repeat left top;
+}
+
+#Servicos h2 {
+    display: none;
+}
+#Servicos h3 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 150px;
+    line-height: 0.9em;
+}
+#Servicos p {
+    font-size: 20px;
+    padding: 10px 0px 50px 150px;
+    line-height: 1.3em;
+
+}
+#Servicos a {
+    font-family: 'Raleway-Thin', Arial;
+    color:#000;
+}
+
+/* INTERNAS */
+
+body.servicos #Conteudo h2 {
+    padding-bottom: 50px;
+}
+body.servicos #Conteudo ul,
+body.servicos #Conteudo p {
+    font-family: Arial, serif;
+    font-size: 15px;
+    line-height: 2em;
+    color: #999;
+
+    padding:0 60px 0 420px;
+}
+body.servicos #Conteudo p {
+    padding-bottom: 2.5em;
+}
+body.servicos #Conteudo h4 {
+    font-family: 'Raleway-Thin', Arial;
+    font-size: 25px;
+    color: #000;
+    padding:0 30px 0 420px;
+}
+
+body.servicos #Conteudo div {
+    position: relative;
+    padding:0 0 100px 0;
+}
+body.servicos #Conteudo h3 {
+    position: absolute;
+    top:30px;
+    left: 180px;
+    width: 100px;
+
+    font-family: 'Raleway-Thin', Arial;
+    font-size: 25px;
+    color: #000;
+
+}
+body.servicos #Conteudo div.executive {
+    background: url("../img/icone-executive.jpg") no-repeat 30px top;
+}
+body.servicos #Conteudo div.life {
+    background: url("../img/icone-life.jpg") no-repeat 30px top;
+}
+body.servicos #Conteudo div.comportamental {
+    background: url("../img/icone-comportamental.png") no-repeat 30px top;
+}
+
+
+/* Ultimas
+---------------------------------------------------------------------------------- */
+
+#Ultimas {
+    width: 450px;
+    float: left;
+
+    padding: 20px;
+
+}
+#Ultimas h2 a {
+    font-family: 'Raleway-Thin', Arial;
+    font-size: 30px;
+    color:#000;
+
+}
+#Ultimas ul {
+    padding-top: 15px;
+    list-style: none;
+}
+#Ultimas ul li a {
+    font-family: Arial, serif;
+    font-size: 14px;
+    color: #666;
+    display: block;
+    padding:10px 0 10px 0;
+    border-bottom: solid 1px #E9E9E9;
+}
+#Ultimas ul li a:hover {
+    background: #f1f1f1;
+}
+
+
+/* Internas
+---------------------------------------------------------------------------------- */
+#Conteudo h2.titulo {
+    font-family: 'Raleway-Thin', Arial;
+    font-size: 30px;
+    color: #FFF;
+    padding: 20px 0 30px 30px;
+    height: 39px;
+    overflow: hidden;
+}
+body.portifolio #Conteudo h2 {
+    background: url("../img/titulo-portifolio.jpg") no-repeat;
+}
+body.servicos #Conteudo h2 {
+    background: url("../img/titulo-servicos.jpg") no-repeat;
+}
+body.clientes #Conteudo h2 {
+    background: url("../img/titulo-clientes.jpg") no-repeat;
+}
+body.blog #Conteudo h2 {
+    background: url("../img/titulo-blog.jpg") no-repeat;
+}
+body.contato #Conteudo h2 {
+    background: url("../img/titulo-contato.jpg") no-repeat;
+}
+
+
+
+
+/* Portifolio
+---------------------------------------------------------------------------------- */
+
+body.portifolio #Conteudo h4,
+body.portifolio #Conteudo ul,
+body.portifolio #Conteudo p {
+    font-family: Arial, serif;
+    font-size: 15px;
+    line-height: 2em;
+    color: #484848;
+
+    padding:0 30px 0 300px;
+}
+body.portifolio #Conteudo p {
+    padding-bottom: 2.5em;
+}
+body.portifolio #Conteudo ul {
+    padding: 0 60px 2.5em 350px;
+}
+body.portifolio #Conteudo h4 {
+    font-family: 'Raleway-Thin', Arial;
+    font-size: 25px;
+    color: #000;
+}
+
+
+body.portifolio #Conteudo p.foto {
+    position: absolute;
+    left: 10px;
+    padding:0;
+}
+body.portifolio #Conteudo p.foto img {
+    width: 250px;
+}
+
+
+/* Clientes
+---------------------------------------------------------------------------------- */
+
+body.clientes #Conteudo p {
+    padding:30px 30px 40px 270px;
+    font-family: Arial, serif;
+    font-size: 15px;
+    color: #666;
+    
+    position: relative;
+}
+body.clientes #Conteudo p strong {
+    font-family: 'Raleway-Thin', Arial;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+}
+
+body.clientes #Conteudo p img {
+    width: 200px;
+    background: #FFF;
+    display: block;
+    border: solid 1px #999;
+    padding: 7px;
+
+    position: absolute;
+    left: 30px;
+}
+
+
+/* Rodape
+---------------------------------------------------------------------------------- */
+
+#Rodape {
+    clear: both;
+    text-align: center;
+    /*  background:#458098;*/
+    padding: 50px;
+}
+#Rodape a {
+    font-family: 'Raleway-Thin', Arial;
+    color:#484848;
+    text-transform: lowercase;
+    padding: 0 10px;
+}
+#Rodape a:hover {
+    text-decoration: underline;
+}
