@@ -1,0 +1,565 @@
+/* Projeto: Luciana Studart
+   Desenvolvedor: Marcelo Glacial
+   Inicio: 11/09/2011
+   Ultima alteracao: 12/09/2011
+*/
+
+
+/* Reset  
+---------------------------------------------------------------------------------- */
+* {
+    margin:0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+hr {
+    display: none;
+}
+html {
+    background: url("../img/fundo-repeat.jpg") center #458098;
+}
+body {
+    background: url("../img/fundo.jpg") no-repeat top center;
+}
+
+.hide {
+    display: none;
+}
+
+/* Site
+---------------------------------------------------------------------------------- */
+#Site {
+    width:960px;
+    margin:0 auto;
+    position:relative;
+}
+
+/* Atalhos
+---------------------------------------------------------------------------------- */
+#Atalhos {
+    display:none;
+}
+
+/* Cabecalho
+---------------------------------------------------------------------------------- */
+#Cabecalho {
+    position: relative;
+    padding: 100px 30px 0 30px;
+
+    font-family: 'Raleway', Arial;
+}
+
+#Cabecalho h1 a {
+    font-size: 50px;
+    color: #478198;
+    letter-spacing: -1px;
+
+    display: block;
+    width: 350px;
+    height: 90px;
+
+}
+#Cabecalho p {
+    color:#91B4C1;
+
+    position: absolute;
+    top:145px;
+    left: 175px;
+}
+
+/* Menu
+---------------------------------------------------------------------------------- */
+#Menu {
+    position: absolute;
+    top: 120px;
+    left: 435px;
+}
+#Menu h2 {
+    display: none;
+}
+#Menu ul li {
+    list-style: none;
+    float: left;
+    padding-left: 25px;
+    position: relative;
+}
+#Menu ul li a {
+    font-family: 'Raleway', Arial;
+    font-size: 20px;
+    color: #666666;
+}
+#Menu ul li a:hover {
+    /* text-decoration: underline;*/
+    padding-bottom: 5px;
+    border-bottom: solid 1px;
+}
+
+/* sub-menu */
+
+#Menu ul li.page-item-7 ul {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 250px;
+    background: #FFF;
+    padding: 15px 0 5px 0;
+    display: none;
+    z-index: 9999;    
+} 
+#Menu ul li.page-item-7:hover ul {
+    display: block;
+    z-index: 9998;
+}
+#Menu ul li ul li a {
+    display: block;
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: #999;
+}
+#Menu ul li ul li a:hover {
+    border-bottom:none;
+    padding-bottom: 5px;
+    border-bottom: solid 1px;
+    margin-bottom: 9px;
+}
+
+
+/* Destaques
+---------------------------------------------------------------------------------- */
+#Destaques {
+    position: relative;
+    height: 345px;
+    background:#f1f1f1;
+    margin-bottom: 30px;
+}
+#Destaques h2 {
+    display: none;
+}
+
+#Destaques h3 a {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+
+    font-family: 'Ubuntu', "Trebuchet MS", Arial;
+    font-size: 40px;
+    color: #FFF;
+
+    width: 360px;
+    padding: 20px 30px;
+
+    background: rgba(0,0,0,0.3);
+    filter: alpha(opacity=30); /* IE? */
+}
+#Navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 450px;
+
+}
+#Navegacao ol li {
+    float: left;
+    width: 25px;
+
+}
+
+#Navegacao ol li a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    background: url("../img/seletor-inativo.png") top left;
+}
+#Navegacao ol li a.ativo {
+    background: url("../img/seletor-ativo.png") top left;
+}
+
+/* Destaques
+---------------------------------------------------------------------------------- */
+
+#Conteudo #Servicos {
+    width: 400px;
+    float: left;
+
+    padding: 30px;
+}
+#Conteudo #Servicos .executive {
+    background: url("../img/icone-executive.jpg") no-repeat left top;
+}
+#Conteudo #Servicos .life {
+    background: url("../img/icone-life.jpg") no-repeat left top;
+}
+#Conteudo #Servicos .treinamentos {
+    background: url("../img/icone-treinamentos.jpg") no-repeat left top;
+}
+#Conteudo #Servicos h2 {
+    display: none;
+}
+#Conteudo #Servicos h3 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 150px;
+    line-height: 0.9em;
+}
+#Conteudo #Servicos p {
+    font-size: 20px;
+    padding: 10px 0px 50px 150px;
+    line-height: 1.3em;
+
+}
+#Conteudo #Servicos a {
+    font-family: 'Raleway', Arial;
+    color:#000;
+}
+
+/* Serviços
+---------------------------------------------------------------------------------- */
+
+body.servicos #Conteudo {
+	padding: 100px 50px 50px 220px;
+	position: relative;
+}
+body.servicos #Conteudo h2 {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top:0px;
+}
+body.servicos #Conteudo ul,
+body.servicos #Conteudo p {
+    font-family: Arial, serif;
+    font-size: 15px;
+    line-height: 2em;
+    color: #999;
+}
+body.servicos #Conteudo p {
+    padding-bottom: 2.5em;
+}
+body.servicos #Conteudo h4 {
+    font-family: 'Raleway', Arial;
+    font-size: 25px;
+    color: #000;
+}
+
+body.servicos #Conteudo div {
+    position: relative;
+}
+body.servicos #Conteudo ul {
+	padding: 20px 30px;
+} 
+
+body.executive-coaching #Conteudo {
+    background: url("../img/icone-executive.jpg") no-repeat 30px 100px;
+}
+body.life-coaching #Conteudo {
+    background: url("../img/icone-life.jpg") no-repeat 30px 100px;
+}
+body.mbti #Conteudo {
+    background: url("../img/icone-comportamental.png") no-repeat 30px 100px;
+}
+body.treinamentos-customizados #Conteudo {
+    background: url("../img/icone-treinamentos.png") no-repeat 30px 100px;
+}
+
+
+/* Ultimas
+---------------------------------------------------------------------------------- */
+
+#Ultimas {
+    width: 450px;
+    float: left;
+
+    padding: 20px;
+
+}
+#Ultimas h2 a {
+    font-family: 'Raleway', Arial;
+    font-size: 30px;
+    color:#000;
+
+}
+#Ultimas ul {
+    padding-top: 15px;
+    list-style: none;
+}
+#Ultimas ul li a {
+    font-family: Arial, serif;
+    font-size: 14px;
+    color: #666;
+    display: block;
+    padding:10px 0 10px 0;
+    border-bottom: solid 1px #E9E9E9;
+}
+#Ultimas ul li a:hover {
+    background: #f1f1f1;
+}
+
+
+/* Titulos
+---------------------------------------------------------------------------------- */
+#Conteudo h2.titulo {
+    font-family: 'Raleway', Arial;
+    font-size: 30px;
+    color: #FFF;
+    padding: 20px 0 30px 30px;
+    height: 39px;
+    overflow: hidden;
+}
+body.portifolio #Conteudo h2 {
+    background: url("../img/titulo-portifolio.jpg") no-repeat;
+}
+body.servicos #Conteudo h2 {
+    background: url("../img/titulo-servicos.jpg") no-repeat;
+}
+body.clientes #Conteudo h2 {
+    background: url("../img/titulo-clientes.jpg") no-repeat;
+}
+body.blog #Conteudo h2 {
+    background: url("../img/titulo-contato.jpg") no-repeat;
+}
+body.contato #Conteudo h2 {
+    background: url("../img/titulo-contato.jpg") no-repeat;
+}
+
+/* Portifolio
+---------------------------------------------------------------------------------- */
+
+body.portifolio #Conteudo h4,
+body.portifolio #Conteudo ul,
+body.portifolio #Conteudo p {
+    font-family: Arial, serif;
+    font-size: 15px;
+    line-height: 2em;
+    color: #484848;
+
+    padding:0 30px 0 300px;
+}
+body.portifolio #Conteudo p {
+    padding-bottom: 2.5em;
+}
+body.portifolio #Conteudo ul {
+    padding: 0 60px 2.5em 350px;
+}
+body.portifolio #Conteudo h4 {
+    font-family: 'Raleway', Arial;
+    font-size: 25px;
+    color: #000;
+}
+
+
+body.portifolio #Conteudo p img {
+    position: absolute;
+    left: 10px;
+    padding:0;
+}
+body.portifolio #Conteudo p img {
+    width: 250px;
+}
+
+
+/* Clientes
+---------------------------------------------------------------------------------- */
+
+body.clientes #Conteudo {
+	padding: 90px 30px;
+	position: relative;
+
+}
+body.clientes #Conteudo h2 {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top:0px;
+}
+body.clientes #Conteudo p {
+    padding-bottom: 10px;
+    font-family: Arial, serif;
+    font-size: 15px;
+    color: #666;
+    
+    position: relative;
+}
+body.clientes #Conteudo p strong {
+    font-family: 'Raleway', Arial;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+    clear: both;
+}
+
+body.clientes #Conteudo p img {
+    width: 200px;
+    height: auto;
+    background: #FFF;
+    display: block;
+    border: solid 1px #999;
+    padding: 7px;
+    margin: 0px 30px 30px 0px;
+    float: left;
+}
+body.clientes #Conteudo hr {
+	display: block;
+	border: solid 1px #FFF;
+	clear: both;
+}
+
+/* Blog
+---------------------------------------------------------------------------------- */
+
+body.blog #Conteudo {
+	padding: 90px 30px;
+	position: relative;
+}
+body.blog #Conteudo h2 {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top:0px;
+}
+body.blog #Conteudo a:hover {
+	text-decoration: underline;
+}
+
+body.blog #Conteudo #Posts {
+	width: 600px;
+}
+body.blog #Conteudo h3 {
+	padding-bottom: 5px;
+}
+body.blog #Conteudo h3 a {
+    font-family: 'Raleway', Arial;
+    font-size: 30px;
+    color: #000;
+}
+body.blog #Conteudo p {
+    padding-bottom: 2em;
+    font-family: Arial, serif;
+    font-size: 15px;
+    line-height: 1.7em;
+    color: #666;
+}
+body.blog #Conteudo p.data {
+	padding-bottom: 5px;
+	color: #CCC;
+	font-size: 12px;
+}
+body.blog #Conteudo p.comentarios a {
+	display: block;
+	background: #F1F1F1;
+	color: #666;
+	padding: 5px 10px;
+	border-bottom: solid 2px #CCC;
+	margin-bottom: 30px;
+}
+
+body.blog #Sidebar {
+	position: absolute;
+	top:290px;
+	right: 60px;
+	width:200px;
+}
+body.blog #Sidebar h2 {
+    font-family: 'Raleway', Arial;
+    font-size: 20px;
+    color: #000;
+   	border-bottom: solid 2px #CCC;
+}
+body.blog #Sidebar ul li {
+	list-style: none;
+	padding-bottom: 20px;
+}
+body.blog #Sidebar ul li ul li {
+	padding-bottom: 0px;
+}
+
+body.blog #Sidebar a {
+	color: #666;
+	display: block;
+	padding: 7px 0px;
+   	border-bottom: solid 1px #F1F1F1;	
+   	
+   	font-family: Arial;
+   	font-size: 12px;
+   	text-transform: capitalize;
+}
+body.blog #Sidebar a:hover {
+    background: #f1f1f1;
+}
+
+
+
+
+/* Contato
+---------------------------------------------------------------------------------- */
+
+body.contato #Conteudo p {
+    padding:7px 40px;
+    font-family: 'Raleway', Arial;
+    font-size: 20px;
+    color: #666;
+}
+body.contato #Conteudo p input, 
+body.contato #Conteudo p textarea {
+    padding:7px;
+    font-family: Arial;
+    font-size: 15px;
+    color: #666;
+    width: 300px;
+}
+body.contato #Conteudo p textarea {
+    width: 300px;
+}
+body.contato #Conteudo p input.wpcf7-submit {
+    width: 315px;
+    padding: 5px 0;
+    font-family: 'Raleway', Arial;
+    font-size: 20px;
+    background: #f9f9f9;
+    border: solid 1px #CCC;
+}
+body.contato #Conteudo span.wpcf7-not-valid-tip-no-ajax {
+    padding: 0 0 0 10px;
+    font-size: 15px;
+    color: #FF0000;
+}
+body.contato #Conteudo span.wpcf7-form-control-wrap {
+    margin-top: 7px;
+}
+.wpcf7-display-none {
+    display: none;
+}
+body.contato #Conteudo div.wpcf7-response-output,
+body.contato #Conteudo div.wpcf7-mail-sent-ok {
+    padding:7px 40px;
+    margin: 40px;
+    background: #FF0000;
+    font-family: 'Raleway', Arial;
+    font-size: 20px;
+    color: #FFF;
+}
+
+
+
+/* Rodape
+---------------------------------------------------------------------------------- */
+
+#Rodape {
+    clear: both;
+    text-align: center;
+    /*  background:#458098;*/
+    padding: 50px;
+}
+#Rodape a {
+    font-family: 'Raleway', Arial;
+    color:#484848;
+    text-transform: lowercase;
+    margin: 0 10px;
+}
+#Rodape a:hover {
+    /* text-decoration: underline;*/
+    padding-bottom: 2px;
+    border-bottom: solid 1px;
+
+}
