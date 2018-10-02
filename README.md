@@ -13,5 +13,3 @@
 ## Screnshot
 
 ![screenshot](design/layout.png)
-
-TRIGGET PAGES
