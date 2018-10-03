@@ -1,12 +1,12 @@
 # Luciana Studart
 
-### Front-end 
+## Front-end 
 
 * HTML
 * CSS
 * JavaScript
 
-### Back-end
+## Back-end
 
 * Wordpress
 
