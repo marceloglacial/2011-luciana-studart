@@ -10,6 +10,10 @@
 
 * Wordpress
 
+## Live Demo
+
+https://glacial.gitlab.io/2011-luciana-studart/front-end/
+
 ## Screnshot
 
 ![screenshot](design/layout.png)
