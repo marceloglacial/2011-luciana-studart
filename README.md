@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-https://glacial.gitlab.io/2011-luciana-studart/
+https://marceloglacial.github.io/2011-luciana-studart/front-end/
 
 ## Screnshot
 
